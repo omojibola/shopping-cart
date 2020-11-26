@@ -12,7 +12,6 @@ const ContextDataProvider = ({ children }) => {
     const res = await fetch(BASE_URL);
     const data = await res.json();
     setProducts(data);
-    setLoading(false);
   };
 
   useEffect(() => {
