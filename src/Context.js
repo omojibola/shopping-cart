@@ -4,13 +4,11 @@ export const DataContext = createContext();
 
 const ContextDataProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
 
   const getProducts = async () => {
     const BASE_URL = 'https://fakestoreapi.com/products';
-    setLoading(true);
     const res = await fetch(BASE_URL);
     const data = await res.json();
     setProducts(data);

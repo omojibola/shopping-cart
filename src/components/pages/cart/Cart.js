@@ -15,6 +15,7 @@ const Cart = () => {
   } = useContext(DataContext);
   useEffect(() => {
     sumTotal();
+    // eslint-disable-next-line
   }, []);
 
   if (cart.length === 0) {
