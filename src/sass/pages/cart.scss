@@ -1,0 +1,167 @@
+.cart-wrapper {
+  margin-top: 50px;
+}
+
+.cart-row {
+  display: flex;
+  gap: 30px;
+}
+
+.cart-row-1 {
+  width: 70%;
+}
+
+.cart-row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-row-1 h3 {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.item-details-display {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.item-details-display img {
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.desc {
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 20px;
+}
+
+.desc .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.desc p {
+  margin: 0 !important;
+}
+
+.count {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count button {
+  display: flex;
+  height: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.item-details-display h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  width: 200px;
+}
+
+.remove-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 30px;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-row-2 {
+  padding: 20px 10px;
+  border: 1px solid #c4c4c4;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+}
+
+.bottom-part {
+  display: flex;
+}
+
+.bottom-part .clear-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .count {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cart-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-row-1 {
+    width: 100%;
+  }
+
+  .cart-row-2 {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .item-details-display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-details-display h4 {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin-left: 0 !important ;
+  }
+
+  .desc {
+    margin: 0;
+  }
+
+  .count {
+    margin-right: auto;
+  }
+}

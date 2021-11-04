@@ -1,0 +1,27 @@
+.shop-wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid: auto / repeat(3, 1fr);
+  grid-gap: 40px 20px;
+  justify-items: center;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    grid: auto / repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+    grid: auto / repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  // @media (max-width: 720px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+}

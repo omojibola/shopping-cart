@@ -1,0 +1,28 @@
+.card-wrapper {
+  .image_wrap {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+
+    & img {
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .add-to-cart {
+      height: 35px;
+      background: #000;
+      color: #fff;
+      position: absolute;
+      top: 90%;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+
+  .product-price,
+  .product-title {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+.header-wrapper {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .logo > h3 {
+    color: #fff;
+  }
+
+  .search {
+    display: flex;
+    gap: 5%;
+    height: 100%;
+    align-items: center;
+
+    & input {
+      background: #fff;
+      height: 30px;
+      border-radius: 4px;
+      opacity: 0.7;
+      border: none;
+      text-indent: 5px;
+    }
+  }
+
+  .end > a {
+    color: #fff;
+  }
+}
